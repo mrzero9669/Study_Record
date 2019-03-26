@@ -1,4 +1,15 @@
-[TOC]
+
+- [python 解释器](#python-解释器)
+- [python版本介绍](#python版本介绍)
+- [python版本控制](#python版本控制)
+    - [pyenv 简介](#pyenv-简介)
+        - [virtualenv](#virtualenv)
+        - [导出项目依赖包](#导出项目依赖包)
+        - [pyenv 相关路径](#pyenv-相关路径)
+    - [pip命令](#pip命令)
+        - [pip 常用命令操作](#pip-常用命令操作)
+        - [Pypi源地址更改](#pypi源地址更改)
+
 
 ## python 解释器
 > 
@@ -34,7 +45,7 @@ __注__:目前主流的还是官方提供的Cpython，pypon是基于python语言
 * 字符串统一使用unicode。2.x中如果想要输入中文，还需要在文件头显示声明(_*_coding:utf-8 _*_)
 * 异常的捕获、抛出的语法改变
 
-##  python版本控制
+## python版本控制
 &ensp;&ensp;&ensp;&ensp;在工作场景中由于许多老项目的python代码采用的是python2.x运行，而新增的功能代码又是基于python3.x版本开发的，这时候就涉及到一台linux服务器上多个python环境共存问题，通常我们的解决办法有：
 *  编译安装新版本至某一个路径
 *  多版本python管理工具pyenv
@@ -174,7 +185,7 @@ pip pip-19.0.3.dist-info pkg_resources prometheus_client prometheus_client-0.6.0
 prompt_toolkit prompt_toolkit-2.0.9.dist-info ptyprocess ptyprocess-0.6.0.dist-info pvectorc.cpython-36m-x86_64-linux-gnu.so
 __pycache__ pygments Pygments-2.3.1.dist-info pyrsistent pyrsistent-0.14.11-py3.6.egg-info
 ```
-###  pip命令
+### pip命令
  &ensp;&ensp;&ensp;&ensp; pip它是Python的包管理工具，类似于Yum和CentOS的关系，通常可以使用pip命令安装几乎所有的Python第三方包。
 #### pip 常用命令操作
 ```
